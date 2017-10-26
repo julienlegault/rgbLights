@@ -1,0 +1,34 @@
+<html>
+   <head>
+      <link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+      <script type="text/javascript" src="script.js"></script>
+      <title>Change Light Color</title>
+   </head>
+   <body onload="onload();">
+      <div id="header">
+         <h1>Change Light Color</h1>
+      </div>
+      <div class="outer-box">
+         <div id="color-picker" class="inner-box">
+            <input type="color" id="colorPick"/>
+            <input type="button" value="Enter" onclick="sendcolorpick();"/>
+         </div>
+         <div id="rgb" class="inner-box">
+            Red: <input type="text" id="redRGB"/>
+            Green: <input type="text" id="greenRGB"/>
+            Blue: <input type="text"id="blueRGB"/>
+            <input type="button" value="Enter" onclick="sendrgb();"/>
+         </div>
+         <div id="hex" class="inner-box">
+            Hex Code: <input type="text" id="hexCode"/>
+            <input type="button" value="Enter" onclick="sendhex();"/>
+         </div>
+         <div id="war-eagle" class="inner-box">
+            <input type="button" value="War Eagle" onclick="warEagle();"/>
+         </div>
+         <div id="sunrise" class="inner-box">
+            Time: <input type="time" id="sunTime"/>
+            <input type="button" value="Enter" onclick="sunrise();"/>
+         </div>
+   </body>
+</html>

@@ -1,0 +1,24 @@
+#header {
+   text-align:center;
+   vertical-align:middle;
+   line-height:100%;
+   margin:auto;
+   width:75%;
+   background-color:white;
+   border:solid 2px;
+}
+
+.outer-box {
+   width:100%;
+   margin:auto;
+}
+
+.inner-box {
+   width:75%;
+   text-align:center;
+   border:solid 2px;
+   margin:auto;
+   margin-top: 1%;
+   padding:3px;
+   background-color:white;
+}
