@@ -9,6 +9,11 @@
          <h1>Change Light Color</h1>
       </div>
       <div class="outer-box">
+         <div id="user-code" class="inner-box">
+            Change this to something so your lights don't conflict with someone elses: 
+            <input type="text" id="userCode"/>
+            <input type="button" value="Enter" onclick="sendusercode();"/>
+         </div>
          <div id="color-picker" class="inner-box">
             <input type="color" id="colorPick"/>
             <input type="button" value="Enter" onclick="sendcolorpick();"/>

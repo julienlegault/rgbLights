@@ -4,6 +4,7 @@ var blueRGB;
 var hexCode;
 var colorPick;
 var sunTime;
+var userCode;
 
 function onload() {
    redRGB = document.getElementById("redRGB");
@@ -12,6 +13,7 @@ function onload() {
    hexCode = document.getElementById("hexCode");
    colorPick = document.getElementById("colorPick");
    sunTime = document.getElementById("sunTime");
+   userCode = document.getElementById("userCode");
 }
 
 function setBackground(color) {
@@ -42,4 +44,8 @@ function warEagle() {
 
 function sunrise() {
    setBackground("rgb(255,128,64)");
+}
+
+function sendusercode() {
+   alert(userCode.value);
 }
