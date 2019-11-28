@@ -68,7 +68,7 @@ while(True):
    if(userInput[0] == '#'):
       setColor((sanitary(toRGB(userInput))))
    elif(userInput[0] == '.'):
-      setColor(sanitary(userInput)))
+      setColor(sanitary(userInput))
    elif(userInput == "War Eagle"):
       warEagle()
    elif(userInput[0:7] == "sunrise"):
