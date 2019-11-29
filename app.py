@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request
+from constants import IpConstants
 import pigpio
 
 pi = pigpio.pi()
@@ -32,5 +33,5 @@ def formSubmit():
 	return render_template('index.html')
 
 if __name__ == '__main__':
-	app.run(debug=True, host='10.0.0.69', port=9874)
+	app.run(debug=True, host=IpConstants.__IP__, port=IpConstants.__PORT__)
 
