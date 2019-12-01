@@ -1,24 +1,15 @@
-#header {
-   text-align:center;
-   vertical-align:middle;
-   line-height:100%;
-   margin:auto;
-   width:75%;
-   background-color:white;
-   border:solid 2px;
+html{
+	font-size: 30px;
+	background-color: #d9d9d9;
+	font-family: geneva, arial, times;
 }
 
-.outer-box {
-   width:100%;
-   margin:auto;
+input[type=color] {
+	zoom: 4;
+	padding: 10px;
 }
 
-.inner-box {
-   width:75%;
-   text-align:center;
-   border:solid 2px;
-   margin:auto;
-   margin-top: 1%;
-   padding:3px;
-   background-color:white;
+input[type=submit] {
+	zoom: 4;
+	padding: 10px;
 }

@@ -24,13 +24,28 @@ def changeLights(aHex):
 	pi.set_PWM_dutycycle(GREEN_PIN, rgbarray[1])
 	pi.set_PWM_dutycycle(BLUE_PIN, rgbarray[2])
 
+@app.rout.('/')
+def index():
+	currentColor = open("cc.txt", "r")
+	pushCol = currentColor.read()
+	currentColor.close()
+	templateData = {
+		'CurrentColor': pushCol
+	}
+	return render_template('index.html', **templateData)
+
 @app.route('/', methods=['POST', 'GET'])
 def formSubmit():
+	currentColor = open("cc.text", "w+")
+	hexCode = "#ffffff"
 	if request.method == 'POST':
 		hexCode = request.form.get('colorPick')
-		print(hexCode)
+		currentColor.write(hexCode)
 		changeLights(hexCode)
-	return render_template('index.html')
+	templateData = {
+		'CurrentColor': hexCode
+	}
+	return render_template('index.html', **templateData)
 
 if __name__ == '__main__':
 	app.run(debug=True, host=IpConstants.__IP__, port=IpConstants.__PORT__)
