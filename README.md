@@ -1,7 +1,7 @@
 # rgbLights
 Control RGB led strip using Raspberry Pi 
 
-Site allows for multiple types of color entry.
+Uses HTML Color Picker to select RGB color. 
 
 # TODO
 Merge into personal website
